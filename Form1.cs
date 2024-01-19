@@ -16,5 +16,16 @@ namespace Organizer
         {
             InitializeComponent();
         }
+
+
+        private void saveBut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            if (dateCal  dateCal.TodayDate)
+        }
     }
 }
