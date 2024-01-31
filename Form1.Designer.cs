@@ -30,87 +30,113 @@
         {
             this.lblLog = new System.Windows.Forms.Label();
             this.lblPass = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.checkShow = new System.Windows.Forms.CheckBox();
+            this.txtLog = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.btnEnt = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblLog
             // 
+            this.lblLog.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLog.AutoSize = true;
-            this.lblLog.Location = new System.Drawing.Point(46, 50);
+            this.lblLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblLog.Location = new System.Drawing.Point(25, 29);
             this.lblLog.Name = "lblLog";
-            this.lblLog.Size = new System.Drawing.Size(38, 13);
+            this.lblLog.Size = new System.Drawing.Size(50, 15);
             this.lblLog.TabIndex = 0;
-            this.lblLog.Text = "Логин";
+            this.lblLog.Text = "Логин:";
             // 
             // lblPass
             // 
+            this.lblPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPass.AutoSize = true;
-            this.lblPass.Location = new System.Drawing.Point(46, 124);
+            this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPass.Location = new System.Drawing.Point(25, 114);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(45, 13);
+            this.lblPass.Size = new System.Drawing.Size(61, 15);
             this.lblPass.TabIndex = 0;
-            this.lblPass.Text = "Пароль";
+            this.lblPass.Text = "Пароль:";
             // 
-            // checkBox1
+            // checkShow
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(211, 123);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(114, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Показать пароль";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkShow.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkShow.AutoSize = true;
+            this.checkShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkShow.Location = new System.Drawing.Point(172, 113);
+            this.checkShow.Name = "checkShow";
+            this.checkShow.Size = new System.Drawing.Size(142, 19);
+            this.checkShow.TabIndex = 1;
+            this.checkShow.Text = "Показать пароль";
+            this.checkShow.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtLog
             // 
-            this.textBox1.Location = new System.Drawing.Point(50, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtLog.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtLog.Location = new System.Drawing.Point(29, 61);
+            this.txtLog.Name = "txtLog";
+            this.txtLog.Size = new System.Drawing.Size(139, 21);
+            this.txtLog.TabIndex = 2;
+            this.txtLog.Enter += new System.EventHandler(this.txtLog_Enter);
+            this.txtLog.Leave += new System.EventHandler(this.txtLog_Leave);
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(49, 184);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtPass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPass.Location = new System.Drawing.Point(29, 146);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(139, 21);
+            this.txtPass.TabIndex = 2;
+            this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
+            this.txtPass.Leave += new System.EventHandler(this.txtPass_Leave);
             // 
-            // button1
+            // btnEnt
             // 
-            this.button1.Location = new System.Drawing.Point(42, 255);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 54);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Войти";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEnt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnEnt.Location = new System.Drawing.Point(30, 228);
+            this.btnEnt.MaximumSize = new System.Drawing.Size(150, 60);
+            this.btnEnt.MinimumSize = new System.Drawing.Size(109, 55);
+            this.btnEnt.Name = "btnEnt";
+            this.btnEnt.Size = new System.Drawing.Size(109, 55);
+            this.btnEnt.TabIndex = 3;
+            this.btnEnt.Text = "Войти";
+            this.btnEnt.UseVisualStyleBackColor = true;
+            this.btnEnt.Click += new System.EventHandler(this.btnEnt_Click);
             // 
-            // button2
+            // btnExit
             // 
-            this.button2.Location = new System.Drawing.Point(316, 255);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 54);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Отмена";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnExit.Location = new System.Drawing.Point(254, 228);
+            this.btnExit.MaximumSize = new System.Drawing.Size(150, 60);
+            this.btnExit.MinimumSize = new System.Drawing.Size(109, 55);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(109, 55);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Выход";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 359);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox1);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(394, 301);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnEnt);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtLog);
+            this.Controls.Add(this.checkShow);
             this.Controls.Add(this.lblPass);
             this.Controls.Add(this.lblLog);
+            this.MaximumSize = new System.Drawing.Size(510, 440);
+            this.MinimumSize = new System.Drawing.Size(410, 340);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Авторизация";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,11 +146,11 @@
 
         private System.Windows.Forms.Label lblLog;
         private System.Windows.Forms.Label lblPass;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkShow;
+        private System.Windows.Forms.TextBox txtLog;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.Button btnEnt;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
