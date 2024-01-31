@@ -25,7 +25,14 @@ namespace Organizer
 
         private void date_DateChanged(object sender, DateRangeEventArgs e)
         {
-            if (dateCal  dateCal.TodayDate)
+            DateTime selectedDate = e.Start;
+
+            string date = selectedDate.ToString("dd.MM.yyyy");
+
+            if (selectedDate < DateTime.Today)
+            {
+                MessageBox.Show("Выбранная дата уже прошла");
+            }
         }
     }
 }

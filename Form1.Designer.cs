@@ -42,6 +42,7 @@
             // 
             this.dateCal.CalendarDimensions = new System.Drawing.Size(3, 1);
             this.dateCal.Location = new System.Drawing.Point(0, 0);
+            this.dateCal.MaxSelectionCount = 1;
             this.dateCal.Name = "dateCal";
             this.dateCal.TabIndex = 0;
             this.dateCal.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.date_DateChanged);
