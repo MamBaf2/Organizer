@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.dateCal = new System.Windows.Forms.MonthCalendar();
-            this.time = new System.Windows.Forms.DateTimePicker();
+            this.timePic = new System.Windows.Forms.DateTimePicker();
             this.text = new System.Windows.Forms.TextBox();
-            this.type = new System.Windows.Forms.ComboBox();
+            this.typeCombo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,17 +45,16 @@
             this.dateCal.MaxSelectionCount = 1;
             this.dateCal.Name = "dateCal";
             this.dateCal.TabIndex = 0;
-            this.dateCal.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.date_DateChanged);
             // 
-            // time
+            // timePic
             // 
-            this.time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.time.Location = new System.Drawing.Point(12, 213);
-            this.time.Name = "time";
-            this.time.ShowUpDown = true;
-            this.time.Size = new System.Drawing.Size(78, 20);
-            this.time.TabIndex = 1;
-            this.time.Value = new System.DateTime(2024, 1, 19, 9, 30, 0, 0);
+            this.timePic.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timePic.Location = new System.Drawing.Point(12, 213);
+            this.timePic.Name = "timePic";
+            this.timePic.ShowUpDown = true;
+            this.timePic.Size = new System.Drawing.Size(78, 20);
+            this.timePic.TabIndex = 1;
+            this.timePic.Value = new System.DateTime(2024, 1, 19, 9, 30, 0, 0);
             // 
             // text
             // 
@@ -64,13 +63,17 @@
             this.text.Size = new System.Drawing.Size(266, 20);
             this.text.TabIndex = 2;
             // 
-            // type
+            // typeCombo
             // 
-            this.type.FormattingEnabled = true;
-            this.type.Location = new System.Drawing.Point(368, 212);
-            this.type.Name = "type";
-            this.type.Size = new System.Drawing.Size(121, 21);
-            this.type.TabIndex = 3;
+            this.typeCombo.FormattingEnabled = true;
+            this.typeCombo.Items.AddRange(new object[] {
+            "Памятка",
+            "Встреча",
+            "Задание"});
+            this.typeCombo.Location = new System.Drawing.Point(368, 212);
+            this.typeCombo.Name = "typeCombo";
+            this.typeCombo.Size = new System.Drawing.Size(121, 21);
+            this.typeCombo.TabIndex = 3;
             // 
             // label1
             // 
@@ -118,9 +121,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.type);
+            this.Controls.Add(this.typeCombo);
             this.Controls.Add(this.text);
-            this.Controls.Add(this.time);
+            this.Controls.Add(this.timePic);
             this.Controls.Add(this.dateCal);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -132,9 +135,9 @@
         #endregion
 
         private System.Windows.Forms.MonthCalendar dateCal;
-        private System.Windows.Forms.DateTimePicker time;
+        private System.Windows.Forms.DateTimePicker timePic;
         private System.Windows.Forms.TextBox text;
-        private System.Windows.Forms.ComboBox type;
+        private System.Windows.Forms.ComboBox typeCombo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
