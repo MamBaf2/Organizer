@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblLog = new System.Windows.Forms.Label();
             this.lblPass = new System.Windows.Forms.Label();
             this.checkShow = new System.Windows.Forms.CheckBox();
@@ -41,6 +42,7 @@
             // 
             this.lblLog.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLog.AutoSize = true;
+            this.lblLog.BackColor = System.Drawing.SystemColors.Control;
             this.lblLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblLog.Location = new System.Drawing.Point(25, 29);
             this.lblLog.Name = "lblLog";
@@ -52,6 +54,7 @@
             // 
             this.lblPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPass.AutoSize = true;
+            this.lblPass.BackColor = System.Drawing.SystemColors.Control;
             this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblPass.Location = new System.Drawing.Point(25, 114);
             this.lblPass.Name = "lblPass";
@@ -63,13 +66,14 @@
             // 
             this.checkShow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkShow.AutoSize = true;
+            this.checkShow.BackColor = System.Drawing.SystemColors.Control;
             this.checkShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkShow.Location = new System.Drawing.Point(172, 113);
             this.checkShow.Name = "checkShow";
             this.checkShow.Size = new System.Drawing.Size(142, 19);
             this.checkShow.TabIndex = 1;
             this.checkShow.Text = "Показать пароль";
-            this.checkShow.UseVisualStyleBackColor = true;
+            this.checkShow.UseVisualStyleBackColor = false;
             // 
             // txtLog
             // 
@@ -79,8 +83,6 @@
             this.txtLog.Name = "txtLog";
             this.txtLog.Size = new System.Drawing.Size(139, 21);
             this.txtLog.TabIndex = 2;
-            this.txtLog.Enter += new System.EventHandler(this.txtLog_Enter);
-            this.txtLog.Leave += new System.EventHandler(this.txtLog_Leave);
             // 
             // txtPass
             // 
@@ -91,11 +93,11 @@
             this.txtPass.Size = new System.Drawing.Size(139, 21);
             this.txtPass.TabIndex = 2;
             this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
-            this.txtPass.Leave += new System.EventHandler(this.txtPass_Leave);
             // 
             // btnEnt
             // 
             this.btnEnt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEnt.BackColor = System.Drawing.Color.Moccasin;
             this.btnEnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnEnt.Location = new System.Drawing.Point(30, 228);
             this.btnEnt.MaximumSize = new System.Drawing.Size(150, 60);
@@ -104,12 +106,13 @@
             this.btnEnt.Size = new System.Drawing.Size(109, 55);
             this.btnEnt.TabIndex = 3;
             this.btnEnt.Text = "Войти";
-            this.btnEnt.UseVisualStyleBackColor = true;
+            this.btnEnt.UseVisualStyleBackColor = false;
             this.btnEnt.Click += new System.EventHandler(this.btnEnt_Click);
             // 
             // btnExit
             // 
             this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExit.BackColor = System.Drawing.Color.LightCoral;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnExit.Location = new System.Drawing.Point(254, 228);
             this.btnExit.MaximumSize = new System.Drawing.Size(150, 60);
@@ -118,12 +121,14 @@
             this.btnExit.Size = new System.Drawing.Size(109, 55);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Выход";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(394, 301);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnEnt);
