@@ -23,7 +23,8 @@ namespace Organizer
         private void saveBut_Click(object sender, EventArgs e)
         {
             Data.Date = dateCal.SelectionRange.Start.ToShortDateString();
-            Data.Time = timePic.Value;
+            DateTime dateTime = timePic.Value;
+            Data.Time = dateTime.TimeOfDay;
             Data.Type = this.typeCombo.GetItemText(this.typeCombo.SelectedItem);
             frm2 = new Form2();
             frm2.Show();

@@ -48,13 +48,14 @@
             // 
             // timePic
             // 
+            this.timePic.CustomFormat = "00:00:0000";
             this.timePic.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.timePic.Location = new System.Drawing.Point(12, 213);
             this.timePic.Name = "timePic";
             this.timePic.ShowUpDown = true;
             this.timePic.Size = new System.Drawing.Size(78, 20);
             this.timePic.TabIndex = 1;
-            this.timePic.Value = new System.DateTime(2024, 1, 19, 9, 30, 0, 0);
+            this.timePic.Value = new System.DateTime(2024, 2, 7, 9, 30, 0, 0);
             // 
             // text
             // 
@@ -112,7 +113,7 @@
             this.saveBut.UseVisualStyleBackColor = true;
             this.saveBut.Click += new System.EventHandler(this.saveBut_Click);
             // 
-            // Form1
+            // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,7 +126,7 @@
             this.Controls.Add(this.text);
             this.Controls.Add(this.timePic);
             this.Controls.Add(this.dateCal);
-            this.Name = "Form1";
+            this.Name = "Form3";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -9,7 +9,7 @@ namespace Organizer
     static class Data
     {
         public static string Date;
-        public static DateTime Time;
+        public static TimeSpan Time;
         public static string Type;
     }
 }
