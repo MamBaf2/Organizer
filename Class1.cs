@@ -11,5 +11,6 @@ namespace Organizer
         public static string Date;
         public static TimeSpan Time;
         public static string Type;
+        public static string Event;
     }
 }

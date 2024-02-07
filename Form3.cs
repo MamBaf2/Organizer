@@ -12,7 +12,9 @@ namespace Organizer
 {
     public partial class Form3 : Form
     {
-        Form2 form2;
+        // Создаем событие для оповещения о сохранении данных
+        public event EventHandler DataSaved;
+
         public Form3()
         {
             InitializeComponent();
@@ -20,12 +22,15 @@ namespace Organizer
 
         private void saveBut_Click(object sender, EventArgs e)
         {
+            Data.Event = text.Text;
             Data.Date = dateCal.SelectionRange.Start.ToShortDateString();
             DateTime dateTime = timePic.Value;
             Data.Time = dateTime.TimeOfDay;
             Data.Type = this.typeCombo.GetItemText(this.typeCombo.SelectedItem);
-            form2 = new Form2();
-            form2.Show();
+
+            // Вызываем событие, когда данные сохранены
+            DataSaved?.Invoke(this, EventArgs.Empty);
+
             this.Close();
         }
 

@@ -43,10 +43,10 @@
             this.lblLog.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLog.AutoSize = true;
             this.lblLog.BackColor = System.Drawing.SystemColors.Control;
-            this.lblLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblLog.Location = new System.Drawing.Point(25, 29);
             this.lblLog.Name = "lblLog";
-            this.lblLog.Size = new System.Drawing.Size(50, 15);
+            this.lblLog.Size = new System.Drawing.Size(44, 15);
             this.lblLog.TabIndex = 0;
             this.lblLog.Text = "Логин:";
             // 
@@ -55,10 +55,10 @@
             this.lblPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPass.AutoSize = true;
             this.lblPass.BackColor = System.Drawing.SystemColors.Control;
-            this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblPass.Location = new System.Drawing.Point(25, 114);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(61, 15);
+            this.lblPass.Size = new System.Drawing.Size(54, 15);
             this.lblPass.TabIndex = 0;
             this.lblPass.Text = "Пароль:";
             // 
@@ -67,10 +67,10 @@
             this.checkShow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkShow.AutoSize = true;
             this.checkShow.BackColor = System.Drawing.SystemColors.Control;
-            this.checkShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkShow.Location = new System.Drawing.Point(172, 113);
             this.checkShow.Name = "checkShow";
-            this.checkShow.Size = new System.Drawing.Size(142, 19);
+            this.checkShow.Size = new System.Drawing.Size(127, 19);
             this.checkShow.TabIndex = 1;
             this.checkShow.Text = "Показать пароль";
             this.checkShow.UseVisualStyleBackColor = false;
@@ -98,7 +98,7 @@
             // 
             this.btnEnt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEnt.BackColor = System.Drawing.Color.Moccasin;
-            this.btnEnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnEnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnEnt.Location = new System.Drawing.Point(30, 228);
             this.btnEnt.MaximumSize = new System.Drawing.Size(150, 60);
             this.btnEnt.MinimumSize = new System.Drawing.Size(109, 55);
@@ -113,7 +113,7 @@
             // 
             this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnExit.BackColor = System.Drawing.Color.LightCoral;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnExit.Location = new System.Drawing.Point(254, 228);
             this.btnExit.MaximumSize = new System.Drawing.Size(150, 60);
             this.btnExit.MinimumSize = new System.Drawing.Size(109, 55);
@@ -137,7 +137,7 @@
             this.Controls.Add(this.checkShow);
             this.Controls.Add(this.lblPass);
             this.Controls.Add(this.lblLog);
-            this.MaximumSize = new System.Drawing.Size(510, 440);
+            this.MaximumSize = new System.Drawing.Size(450, 380);
             this.MinimumSize = new System.Drawing.Size(410, 340);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.saveBut = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,48 +41,58 @@
             // 
             // saveBut
             // 
+            this.saveBut.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.saveBut.BackColor = System.Drawing.Color.White;
+            this.saveBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.saveBut.Location = new System.Drawing.Point(7, 286);
             this.saveBut.Name = "saveBut";
             this.saveBut.Size = new System.Drawing.Size(477, 68);
             this.saveBut.TabIndex = 15;
             this.saveBut.Text = "ОК";
-            this.saveBut.UseVisualStyleBackColor = true;
+            this.saveBut.UseVisualStyleBackColor = false;
             this.saveBut.Click += new System.EventHandler(this.saveBut_Click);
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 226);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(21, 224);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(45, 15);
             this.label3.TabIndex = 14;
             this.label3.Text = "Время";
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(409, 225);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(408, 223);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 13);
+            this.label2.Size = new System.Drawing.Size(28, 15);
             this.label2.TabIndex = 13;
             this.label2.Text = "Тип";
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(206, 226);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(218, 224);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(40, 15);
             this.label1.TabIndex = 12;
             this.label1.Text = "Текст";
             // 
             // typeCombo
             // 
+            this.typeCombo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.typeCombo.FormattingEnabled = true;
             this.typeCombo.Items.AddRange(new object[] {
-            "Памятка",
-            "Встреча",
-            "Задание"});
+            "❕",
+            "🤝",
+            "🎯"});
             this.typeCombo.Location = new System.Drawing.Point(363, 241);
             this.typeCombo.Name = "typeCombo";
             this.typeCombo.Size = new System.Drawing.Size(121, 21);
@@ -89,6 +100,7 @@
             // 
             // text
             // 
+            this.text.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.text.Location = new System.Drawing.Point(91, 242);
             this.text.Name = "text";
             this.text.Size = new System.Drawing.Size(266, 20);
@@ -96,6 +108,7 @@
             // 
             // timePic
             // 
+            this.timePic.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.timePic.CustomFormat = "00:00:0000";
             this.timePic.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.timePic.Location = new System.Drawing.Point(7, 242);
@@ -107,6 +120,7 @@
             // 
             // dateCal
             // 
+            this.dateCal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateCal.CalendarDimensions = new System.Drawing.Size(3, 1);
             this.dateCal.Location = new System.Drawing.Point(-5, 29);
             this.dateCal.MaxSelectionCount = 1;
@@ -118,6 +132,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(491, 382);
             this.Controls.Add(this.saveBut);
             this.Controls.Add(this.label3);
@@ -127,8 +143,11 @@
             this.Controls.Add(this.text);
             this.Controls.Add(this.timePic);
             this.Controls.Add(this.dateCal);
+            this.MaximumSize = new System.Drawing.Size(547, 461);
+            this.MinimumSize = new System.Drawing.Size(507, 421);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Добавление события";
             this.ResumeLayout(false);
             this.PerformLayout();
 
