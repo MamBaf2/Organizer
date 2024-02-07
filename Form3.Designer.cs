@@ -46,6 +46,7 @@
             this.saveBut.TabIndex = 15;
             this.saveBut.Text = "ОК";
             this.saveBut.UseVisualStyleBackColor = true;
+            this.saveBut.Click += new System.EventHandler(this.saveBut_Click);
             // 
             // label3
             // 
@@ -111,6 +112,7 @@
             this.dateCal.MaxSelectionCount = 1;
             this.dateCal.Name = "dateCal";
             this.dateCal.TabIndex = 8;
+            this.dateCal.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.dateCal_DateChanged);
             // 
             // Form3
             // 

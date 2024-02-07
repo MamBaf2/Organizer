@@ -53,9 +53,9 @@ namespace Organizer
             // Проверка логина и пароля
             if (login == "mamba" && password == "banan")
             {
-                /* Открываем вторую форму при успешной авторизации
+                //Открываем вторую форму при успешной авторизации
                 Form2 form2 = new Form2();
-                form2.Show(); */
+                form2.Show();
 
             }
             else
