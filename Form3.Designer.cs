@@ -1,6 +1,6 @@
 ﻿namespace Organizer
 {
-    partial class Form1
+    partial class Form3
     {
         /// <summary>
         /// Обязательная переменная конструктора.

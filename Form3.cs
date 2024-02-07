@@ -11,10 +11,10 @@ using System.IO;
 
 namespace Organizer
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
         Form2 frm2;
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
         }
